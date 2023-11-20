@@ -48,3 +48,7 @@ So like the Chad i'm, i fucked the Setting Up Github Auth part up by providing a
 - remove the ssh private key: rm id_rsa
 - remove the ssh public key: rm id_rsa.pub
 - restart the process🥲
+
+NOTE:
+
+- cache git credentials for an hour => git config --global credential.helper cache -timeout=3600
