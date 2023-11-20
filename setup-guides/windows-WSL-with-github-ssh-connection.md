@@ -28,23 +28,23 @@
 4. Provide SSH passphrase, i used something dumb🙂
 5. cd ~/.ssh
 
-#### Addig the private key to your ssh agent
+#### Adding the private key to your ssh agent
 
 ---
 
-5. eval $(ssh-agent -s)
-6. ssh-add <ssh_private key>
-7. cat into the .pub file to get the key.
-8. go to your github /profile/settings/SSH and GPG keys add the pub key to github
+6. eval $(ssh-agent -s)
+7. ssh-add <ssh_private key>
+8. cat into the .pub file to get the key.
+9. go to your github /profile/settings/SSH and GPG keys add the pub key to github
 
 So like the Chad i'm, i fucked the Setting Up Github Auth part up by providing a wrong email for the keygen command, so i had to start again...nice🙂
 
 ## Clean Up note: run the commands in the ssh directory, not necessary but to enhance copy and paste capabilities
 
-1. i want to delete the ssh keys i created from github, my machine and the ssh agent
-   i. view all keys added to ssh agent ssh-add -l or ssh-add -L
-   ii. remove a specific key from the ssh-agent => ssh-add -d id_rsa
-   iii. remove all keys from the ssh-agent => ssh-add -D
-   iv. remove the ssh private key: rm id_rsa
-   v. remove the ssh public key: rm id_rsa.pub
-   vi. restart the process🥲
+- want to delete the ssh keys i created from github, my machine and the ssh agent
+- view all keys added to ssh agent ssh-add -l or ssh-add -L
+- remove a specific key from the ssh-agent => ssh-add -d id_rsa
+- remove all keys from the ssh-agent => ssh-add -D
+- remove the ssh private key: rm id_rsa
+- remove the ssh public key: rm id_rsa.pub
+- restart the process🥲
