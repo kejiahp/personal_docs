@@ -11,3 +11,5 @@ uninstalling nvm
 
 - nvm use system
 - npm uninstall -g a_module
+
+i'm not sure if the above command will work, either way👍
