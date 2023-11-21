@@ -18,7 +18,7 @@
    i. install zsh => `sudo apt install zsh`
    ii. install oh my zsh => `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
-8. btw `cd ~` brings you to the user path within `\\wsl.localhost\<Distro>\home\<Username>` 😲 while `cd /` brings you to the root distro path `\\wsl.localhost\Ubuntu`.
+8. btw `cd ~` brings you within the liux file system itself path:`\\wsl.localhost\<Distro>\home\<Username>` 😲 while `cd /` brings you to the root distro path `\\wsl.localhost\<Distro>`.
 
 you can run `explorer.exe .` to open up a path in file explorer
 
@@ -58,3 +58,4 @@ so after restarting the whole process i realized the email that is provided with
 NOTE:
 
 - cache git credentials for an hour => `git config --global credential.helper cache -timeout=3600`
+- Moving files from the windows filesystem to the linux filesystem we use: `sudo mv <mounted drive>/<foldername>/* /home/<username>/<foldername>` the asterik(\*) stand for all files within the folder.

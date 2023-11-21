@@ -78,7 +78,11 @@ The volumes element tells Compose to mount the local folder ./app to /usr/src/ap
 #### Containerizing our apps
 
 - we use `docker init` to create the Dockerfile, .dockerignore and compose.yml files with default language based content.
-- `docker compose up --build` to start the app and make the container
+- `docker compose up --build` or `docker compose up` to start the app and make the container.
+- `docker compose down` to stop and remove containers and networks (optionally images and volumes as well) use the `docker compose down --volumes` to remove volumes also. `docker-compose down --rmi <all|local>` to remove images
+  `docker-compose start` - command will only restart containers stopped previously
+
+`docker-compose stop` - command will stop running containers but won’t remove them
 
 #### Publishing docker images
 
