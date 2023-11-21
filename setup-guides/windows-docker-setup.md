@@ -8,21 +8,29 @@
    3. Install Docker desktop.
    4. Restart your machine, sign up or in on docker.
 
-So like the nood i'm i went through the docker learning guide, so here are some of the things i learnt
+So like the noob i'm i went through the docker learning guide, so here are some of the things i learnt
 
 ---
+
+#### Container and Images
 
 - Container are isolated environments to run any code.
 - Images are used to create containers and they are created from a Docker file and a sample of your application.
 - Docker images are built with the docker build command e.g. `docker build -t welcome-to-docker .` the `-t` tags the image with a name. The `.` specifies the location of the dockerfile.
 - Images generated can be run from the docker desktop file, though this people are joking they went ahead to use create react app for the image building example app instead of vite that thing takes like 2 years to build, especially on my trash PC 🥲🥲.
 - You can also search up other peoples images from docker hub, build the container and run them, using the search bar you find at the top of the Desktop app.
+
+#### Docker Compose
+
 - **Docker compose** allows the starting of multiple docker container with a single command.
 - The `docker compose up -d` command runs all services specified in the docker compose file and creates a container for the application. The `-d` runs docker in detached mode. So if i delete the container created running the `docker compose up` will spin up the container again.
+
+#### Docker Volumes
+
 - Docker isolates all content in a container from the local file system therefore, once a container is deleted the content is gone to persist the content you can use **volumes**.
 - A **volume** is a location in your local file system managed by docker, docker volumes can be added through the `compose.yml` file.
 
-##### Volumes Explanation
+##### More Volumes Explanation
 
 ```
 services:
@@ -44,10 +52,12 @@ The volumes element that is nested in **todo-database** tells Compose to mount t
 
 The **top-level volumes** element defines and configures a volume named **database** that can be used by any of the services in the Compose file.
 
+#### Bindmounts
+
 - Due to dockers isolated architecture in order for us to access our local file system from within a container we use **bindmounts**.
 - **Bindmounts** lets you share a directory from your host's filesystem into the container.
 
-#### Bindmount Explanation
+#### More Bindmount Explanation
 
 ```
 todo-app:
