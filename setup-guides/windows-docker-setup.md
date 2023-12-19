@@ -24,6 +24,7 @@ So like the noob i am, i went through the docker learning guide, so here are som
 
 - **Docker compose** allows the starting of multiple docker container with a single command.
 - The `docker compose up -d` command runs all services specified in the docker compose file and creates a container for the application. The `-d` runs docker in detached mode. This basically runs the container in the background. So if i delete the container created running the `docker compose up` will spin up the container again.
+- side note the docker compose file read .envs in the same root as it self so you can use variables directly in the compose file
 
 #### Docker Volumes
 
