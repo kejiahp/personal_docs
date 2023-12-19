@@ -30,6 +30,11 @@ So like the noob i am, i went through the docker learning guide, so here are som
 
 - Docker isolates all content in a container from the local file system therefore, once a container is deleted the content is gone to persist the content you can use **volumes**.
 - A **volume** is a location in your local file system managed by docker, docker volumes can be added through the `compose.yml` file.
+- There are three types of volumes:
+
+1. Hosted volumes - this are volumes where you specify the local fs dir to be used by docker for the container `/home/somefile:/var/lib/postgresql/data`
+2. Anonymous volumes - were you allow docker do the chosing of the fs dir `/var/lib/postgresql/data`
+3. Named volumes - were you reference the volumen by a name like giving it a tag but docker still chooses the fs dir it wants to user. e.g. `postgresdb:/var/lib/postgresql/data`
 
 ##### More Volumes Explanation
 
@@ -56,7 +61,7 @@ The **top-level volumes** element defines and configures a volume named **databa
 #### Bindmounts
 
 - Due to dockers isolated architecture in order for us to access our local file system from within a container we use **bindmounts**.
-- **Bindmounts** lets you share a directory from your host's filesystem into the container.
+- **Bindmounts** lets you share a directory frgenerateom your host's filesystem into the container.
 
 #### More Bindmount Explanation
 
