@@ -1,3 +1,3 @@
-# Steps for setting up various things
+# Personal Documents
 
-this is to guide me or you 🫵 when setting up different things on our computer systems.
+personal documents made for me by me, you could also use them too though.
