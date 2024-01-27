@@ -26,9 +26,11 @@ run `sudo usermod -aG docker ${USER}`
 OR
 
 **add a user to the docker group that you’re not logged in as**
+
 sudo usermod -aG docker <username>
 
 **To apply the new group membership, log out of the server and back in, or type the following**
+
 run `su - ${USER}`
 
 **You will be prompted to enter your user’s password to continue.**
@@ -40,9 +42,11 @@ If the current user, doesn't have a password you can set one for the user and re
 - Enter the users passord e.g. daddy123
 
 **Confirm that your user is now added to the docker group by typing**
+
 groups
 
 **Change the permissions of docker socket to be able to connect to the docker daemon /var/run/docker.sock**
+
 run `sudo chmod 666 /var/run/docker.sock`
 
 ### Option 2: Install both docker and docker-compose
