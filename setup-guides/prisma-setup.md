@@ -19,3 +19,5 @@
 - You can run `npx prisma db pull` to turn(sync) your database schema into a Prisma schema.
 
 - Note that during installation, Prisma automatically invokes the `prisma generate` command for you. In the future, you need to run this command after every change to your Prisma models to update your generated Prisma Client.
+
+[Initializing migration history on a DB that already exists before using prisma and contains data that needs to be maintained/preserved](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining#baselining-a-database)
